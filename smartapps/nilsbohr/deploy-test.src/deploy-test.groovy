@@ -60,14 +60,12 @@ def eventHandler(evt) {
     	switches.each { 
         	it.on()
             log.debug "turn $it on"
-            log.debug "Habracadabra on"
         }
     } else {
     	if (evt.value == "closed") {
     		switches.each { 
             	it.off()
                 log.debug "turn $it off"
-                log.debug "Habracadabra off"
             }
         }
     }
