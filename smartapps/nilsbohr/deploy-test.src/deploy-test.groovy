@@ -34,14 +34,14 @@ preferences {
 def installed() {
 	log.debug "Installed with settings: ${settings}"
 
-	initialize()
+	//initialize()
 }
 
 def updated() {
 	log.debug "Updated with settings: ${settings}"
 
 	unsubscribe()
-	initialize()
+	//initialize()
 }
 
 def initialize() {
